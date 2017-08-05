@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import { rendor } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 import Triune from './Triune'
