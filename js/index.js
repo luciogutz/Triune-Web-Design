@@ -1,15 +1,15 @@
 import React from 'react'
-import { rendor } from 'react-dom'
-import { Router, Route, hashHistory } from 'react-router'
+import { render } from 'react-dom'
+import { Router, BrowserRouter, HashRouter, Route, Link, history } from 'react-router-dom'
+// import { history } from 'react-router'
 import Triune from './Triune'
 import Home from './Home'
 
 render(
   (
-    <Router history={ hashHistory}>
-      <Route component={ Triune }>
-        <Route path="/" component={ Home }/>
-      </Route>
-    </Router>
-  )
+    <BrowserRouter history={ HashRouter }>
+      <Triune />
+    </BrowserRouter>
+  ),
+  document.getElementById('app')
 )

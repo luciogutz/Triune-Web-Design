@@ -1,13 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, hashHistory } from 'react-router'
+import { Switch, Route } from 'react-router-dom'
+import Home from './Home'
 
-export default React.createClass({
-  render() {
-    return (
-      <section>
-        {this.props.children}
-      </section>
-    )
-  }
-})
+const Triune = () => (
+    <main>
+      <Switch>
+        <Route exact path='/' component={Home}/>
+      </Switch>
+    </main>
+  )
+
+  export default Triune
