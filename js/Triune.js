@@ -11,4 +11,4 @@ const Triune = () => (
     </main>
   )
 
-  export default Triune
+export default Triune
