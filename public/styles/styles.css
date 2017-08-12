@@ -13,17 +13,29 @@ body {
 }
 
 .header_container {
+  height: 50em;
   width: 100%;
-  background-image: url("")
+  background-image: url("https://github.com/luciogutz/Triune-Web-Design/blob/master/assets/Triune-header-banner.jpg?raw=true");
+  background-size: cover;
 }
 
-.header_title {
+.header_sloagan {
+  font-size: 3em;
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px rgb(0,0,0);
+  padding-top: 10%;
+  font-family: avenir-light;
+  font-weight: 100;
+  animation: fadeInLeft 1.5s;
+  -webkit-aniamations: fadeInLeft 1.5s;
+  animation-delay: 2s;
 }
 
 .menu {
   width: 100%;
   height: 6em;
+  background-color: rgba(0,0,0,0.6);
 }
 
 .menu-logoImg {
