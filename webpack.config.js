@@ -12,7 +12,10 @@ module: {
           test: /\.js$/,
           exclude: /node_modules/,
           loader: 'babel-loader?presets[]=es2015&presets[]=react',
-          loader: 'url?limit=25000'
+          loader: 'url-loader',
+          options: {
+            limit: 25000
+          }
         }
       ]
     }
