@@ -4,7 +4,14 @@ import { BrowserRouter, Route, Link, history } from 'react-router-dom'
 
 const Header = () => (
   <section>
-    <h1> This is the Triune Web Design Website </h1>
+    <section className="header_container">
+      <div className="fullWidth">
+        <img src={require('./assets/Triune-logo.png')} />
+        <h1 className="header_title">
+          This is the Triune Web Design Website
+        </h1>
+      </div>
+    </section>
   </section>
 )
 

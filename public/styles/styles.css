@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.header_container {
+  width: 100%;
+}
+
+.header_title {
+  text-align: center;
+}
