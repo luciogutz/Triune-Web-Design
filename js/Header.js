@@ -1,12 +1,11 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Link, history } from 'react-router-dom'
-import Menu from './Menu.js'
+import Menu from './Menu'
 
 const images = {
     menuLogoImg: "https://github.com/luciogutz/Triune-Web-Design/blob/master/assets/Triune-logo.png?raw=true"
 }
-
 
 class Header extends React.Component {
   render() {
@@ -25,7 +24,7 @@ class Header extends React.Component {
             <Menu />
           </div>
           <div>
-            <h1 className="hide">
+            <h1 className="header_sloagan">
               We make great Wordpress websites.
             </h1>
           </div>
