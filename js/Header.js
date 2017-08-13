@@ -1,14 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Link, history } from 'react-router-dom'
+import Menu from './Menu.js'
 
 const images = {
     menuLogoImg: "https://github.com/luciogutz/Triune-Web-Design/blob/master/assets/Triune-logo.png?raw=true"
 }
 
-function delayElement (e) {
-
-}
 
 class Header extends React.Component {
   render() {
@@ -21,10 +19,13 @@ class Header extends React.Component {
             </p>
           </div>
           <div className="menu">
-            <img className="menu-logoImg" src={images.menuLogoImg} />
+            <Link to='/'>
+              <img className="menu-logoImg" src={images.menuLogoImg} />
+            </Link>
+            <Menu />
           </div>
           <div>
-            <h1 className="header_sloagan fadeInLeft">
+            <h1 className="hide">
               We make great Wordpress websites.
             </h1>
           </div>
